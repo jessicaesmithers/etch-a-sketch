@@ -1,10 +1,59 @@
-.box {
-    outline: 0.5px solid #cccccc;
+@font-face { font-family: The Richland; src: url('The_Richland.otf'); } 
+ @font-face { font-family: The Richland; font-weight: bold; src: url('The_Richland.otf');}
+
+body {
+    background-color: #e1010c;
 }
 
-.container {
+.box {
+    outline: 0.5px solid #cccccc;
+    background-color: #eeeeee;
+}
+
+.grid{
     display: flex;
     flex-wrap: wrap;
     width: 600px;
     margin: 0 auto;
+    border: 5px inset #cccccc;
+}
+
+h1 {
+    color: #f9c324;
+    text-shadow: #860c12 1px 1px;
+    font-family: "The Richland", cursive;
+    text-align: center;
+    font-size: 70px;
+    margin: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.leftButtons, .rightButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+}
+
+button {
+    width: 200px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: "Impact", cursive;
+    font-size: 20px;
+    background-color: #e1010c;
+    border: 2px solid #f9c324;
+    color: #f9c324;
+}
+
+button:hover {
+    background-color: #f9c324;
+    color: #e1010c;
 }
