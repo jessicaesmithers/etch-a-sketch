@@ -51,9 +51,48 @@ button {
     background-color: #e1010c;
     border: 2px solid #f9c324;
     color: #f9c324;
+    text-shadow: #860c12 1px 1px;
 }
 
 button:hover {
     background-color: #f9c324;
     color: #e1010c;
+    text-shadow: #860c12 1px 1px;
+}
+
+h3 {
+    font-family: Impact; 
+    color: #f9c324;
+    text-shadow: #860c12 1px 1px;
+}
+
+/* styles for slider */
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #f9c324;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
 }
