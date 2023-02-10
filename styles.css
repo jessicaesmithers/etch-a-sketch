@@ -54,7 +54,7 @@ button {
     text-shadow: #860c12 1px 1px;
 }
 
-button:hover {
+button:hover, .active {
     background-color: #f9c324;
     color: #e1010c;
     text-shadow: #860c12 1px 1px;

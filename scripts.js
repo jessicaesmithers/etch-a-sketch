@@ -13,12 +13,34 @@ generateGrid(55);
  
 sliderValue.innerHTML = slider.value + " x " + slider.value;
 
-eraser.addEventListener("click", () => currentColor = "#eeeeee");
-black.addEventListener("click", () => currentColor = "black");
-colorful.addEventListener("click", () => currentColor = "rainbow");
+eraser.addEventListener("click", activateEraser);
+black.addEventListener("click", activateBlack);
+colorful.addEventListener("click", activateColorful);
 eraseAll.addEventListener("click", clearGrid);
 slider.addEventListener("change", resize);
 rightButtons.appendChild(sliderValue);
+
+
+function activateEraser(){
+    currentColor = "#eeeeee"; 
+    eraser.classList.add("active");
+    black.classList.remove("active");
+    colorful.classList.remove("active");
+}
+
+function activateBlack(){
+    currentColor = "black";
+    black.classList.add("active");
+    eraser.classList.remove("active");
+    colorful.classList.remove("active");
+}
+
+function activateColorful(){
+    currentColor = "rainbow";
+    colorful.classList.add("active");
+    black.classList.remove("active");
+    eraser.classList.remove("active");
+}
 
 function generateGrid(num){
     grid.innerHTML = "";
