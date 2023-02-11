@@ -52,6 +52,7 @@ button {
     border: 2px solid #f9c324;
     color: #f9c324;
     text-shadow: #860c12 1px 1px;
+    letter-spacing: 1px;
 }
 
 button:hover, .active {
@@ -64,6 +65,7 @@ h3 {
     font-family: Impact; 
     color: #f9c324;
     text-shadow: #860c12 1px 1px;
+    letter-spacing: 1px;
 }
 
 /* styles for slider */
